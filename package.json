@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "author": "Jack Allen <jackallensemail+git@gmail.com>",
   "scripts": {
-    "build": "tsup src/index.ts"
+    "build": "tsup src/index.ts",
+    "test": "vitest"
   },
   "bugs": {
     "url": "https://github.com/jackall3n/strip-emoji/issues"
