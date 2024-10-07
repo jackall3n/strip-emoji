@@ -10,23 +10,16 @@ to Strip emoji from a string in Node.js and browsers.
 Examples
 --------
 
-```js
-var emoji
+```typescript
+import emojiStrip from "strip-emoji";
 
-emoji = 'thumbs-up👍 for staying strong💪 without emoji please🙏'
-console.log(emojiStrip(emoji))
-// => "thumbs-up for staying strong without emoji please"
-
-emoji = 'dealing with emoji😡 makes me feel like poop💩'
-console.log(emojiStrip(emoji))
-// => "dealing with emoji makes me feel like poop"
+const cleaned = emojiStrip("unicorn 🦄 rainbow 🌈"); // "unicorn  rainbow "
 ```
-
 
 API
 ---
 
-### emojiStrip(string) ###
+### stripEmoji(string) ###
 
 Returns a copy of `string` with any emoji characters removed.
 
@@ -51,23 +44,23 @@ Install
 
 Install with [npm](https://www.npmjs.org/):
 ```bash
-npm install --save emoji-strip
+npm install --save strip-emoji
 ```
 
 Require it in your program:
 ```js
-var emojiStrip = require('emoji-strip')
+var emojiStrip = require('strip-emoji')
 ```
 
 ### For browsers ###
 
-Download one of the versions of `emoji-strip.js`:
-- [emoji-strip.js](https://raw.githubusercontent.com/khalifenizar/emoji-strip/master/dist/emoji-strip.js) (uncompressed)
-- [emoji-strip.min.js](https://raw.githubusercontent.com/khalifenizar/emoji-strip/master/dist/emoji-strip.min.js) (minified)
+Download one of the versions of `strip-emoji.js`:
+- [strip-emoji.js](https://raw.githubusercontent.com/khalifenizar/strip-emoji/master/dist/strip-emoji.js) (uncompressed)
+- [strip-emoji.min.js](https://raw.githubusercontent.com/khalifenizar/strip-emoji/master/dist/strip-emoji.min.js) (minified)
 
 Link it in your HTML:
 ```html
-<script src="emoji-strip.min.js"></script>
+<script src="strip-emoji.min.js"></script>
 ```
 
 
