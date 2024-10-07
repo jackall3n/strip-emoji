@@ -1,5 +1,7 @@
-emoji-strip
+strip-emoji
 ===========
+
+###  (forked from [emoji-strip](https://github.com/khalifenizar/emoji-strip))
 
 Use [`emoji-regex`](https://github.com/mathiasbynens/emoji-regex)
 to Strip emoji from a string in Node.js and browsers.
